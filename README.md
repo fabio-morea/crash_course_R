@@ -3,14 +3,17 @@
 https://github.com/fabio-morea-areasciencepark/crash_course_R
 
 There are quite a few excellent "crash courses", tutorials and full courses in R programming language. 
-This is my own flavour. The course is intended for students that are currently using spreadsheets (such as Open Office Calc, Microsoft Excel or Google Sheets) and want to explore the potential of a more powerful programming language.  
+This is my own version. A sort of *appetizer* to 
+The course is intended for students that are currently using spreadsheets (such as Open Office Calc, Microsoft Excel or Google Sheets) and want to explore the potential of a more powerful programming language.  
+It is very short - you can think of it as a sort of appetizer - which allows you to directly experience the potential of a programming language: manage datasets that go beyond the potential of spradesheets, produce graphics and articles in PDF format ...
+
 The course is based on a set of problems of increasing complexity, using a public dataset (italian population). 
 
-It is structired in 4 lessons:
+Main topics
 
 1) basic concepts in data management (data types, named variables, formulas, print, read and write csv, versioning and comments). These basic tasks can be easily carried out also with a spreadsheet, which is a good point to start if you already have some practice. then we will reproduce the same solution in R. We'll use a cloud version to focus only on the code (no installation and configuration).   
 2) flow controls: if/else and a few things spreadheets can't do: for loops, and dataframes. At this stage we will use some R libraries and learn how to install R on your computer
-3) plotting graphs in R and saving to image or PDF format
+3) plotting graphs in R and saving to image or PDF format. markdown to produce PDF text and graphics.
 4) tidyverse syntax "%>%". Where to look for documentation, support and examples.
 
 At the end of the course you should be able to start your own (simple) project, continue learning R and possibly get started also with Python. 
