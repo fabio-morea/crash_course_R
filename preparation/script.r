@@ -1,6 +1,6 @@
 library(tidyverse)
 
-dati <- read.csv('./data/Trieste_2022.csv',  
+dati <- read.csv('./data/prov_trieste_2022.csv',  
                 skip = 2, 
                 encoding = "UTF-8",
                 quote = "\"")
@@ -12,6 +12,7 @@ str(dati)
 dati_solo_trieste <- dati %>%
     filter(Denominazione == "Trieste")%>%
     select(Età, Totale.Maschi, Totale.Femmine)%>%
+    filter(Età != "Totale")%>%
     mutate(eta = as.numeric(Età))%>%
     filter(eta<=100)%>%
     select(-Età)
@@ -44,4 +45,34 @@ ggplot(com_trieste_22, aes(x=eta, y=popolazione))+
     theme_minimal() + 
     ggtitle("Popolazione residente nel comune di Trieste al 1° gennaio 2022")
 
-ggsave('./results/grafico.png') 
+#ggsave('./results/grafico.png') 
+
+
+
+ggplot(com_trieste_22, aes(x=eta, y=popolazione))+
+    geom_col( fill="green", color="white")+
+    coord_flip () + 
+    theme_minimal() + 
+    ggtitle("Popolazione residente nel comune di Trieste al 1° gennaio 2022")
+
+
+
+# a single graph printed to PDF
+pdf("tmp.pdf")
+plot(com_trieste_22$popolazione)
+
+
+
+ggplot(com_trieste_22, aes(x=eta, y=popolazione))+
+    geom_col( fill="green", color="white")+
+    coord_flip () + 
+    theme_minimal() + 
+    ggtitle("Popolazione residente nel comune di Trieste al 1° gennaio 2022")
+
+dev.off()
+
+
+# use a notebook to produce more complex PDF output
+
+
+ 

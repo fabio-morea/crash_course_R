@@ -17,13 +17,13 @@ At the end of the course you should be able to start your own (simple) project, 
 
 This GitLab repository contains the example and the scripts.
 
-********* classes and notes in Italian *******
+********* work in progress: classes and notes in Italian *******
 Programmazione
 -	Perché usare un linguaggio di programmazione
 o	Ripetere lo stesso procedimento su dati diversi
 o	Rapidamente
 -	Quando non basta un foglio di calcolo
-o	Procedure complesse (if, for, merge…)
+o	control instructions (if, for, merge…)
 o	Grandi quantità di dati (migliaia di righe, decine di colonne)
 o	Risultati in formati interoperabili
 o	
